@@ -40,6 +40,7 @@ pub(crate) mod import {
 }
 
 pub(crate) mod eslint {
+    pub mod max_statements;
     pub mod array_callback_return;
     pub mod arrow_body_style;
     pub mod block_scoped_var;
@@ -690,6 +691,7 @@ oxc_macros::declare_all_lint_rules! {
     eslint::max_lines,
     eslint::max_nested_callbacks,
     eslint::max_params,
+    eslint::max_statements,
     eslint::new_cap,
     eslint::no_useless_computed_key,
     eslint::no_unassigned_vars,
